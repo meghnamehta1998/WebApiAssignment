@@ -18,10 +18,12 @@ namespace ManageHotel.Controllers
 
 
         }
+        [Route("api/Hotel/")]
         public Hotel Get(int id) {
             return _hotelManager.GetHotel(id);
         }
         // GET api/values
+        [Route("api/Hotel")]
         public List<Hotel> Get()
         {
             //HotelManager hotelManager = new HotelManager();
@@ -31,19 +33,19 @@ namespace ManageHotel.Controllers
             return _hotelManager.GetAllHotels();
         }
 
-
+        [Route("api/Hotel")]
         // POST: api/Hotel
         public string Post([FromBody]Hotel model)
         {
             return _hotelManager.CreateHotel(model);
         }
-
+        [Route("api/Hotel")]
         // PUT: api/Hotel/5
         public string Put([FromBody]Hotel model)
         {
             return _hotelManager.UpdateHotel(model);
         }
-
+        [Route("api/Hotel/")]
         // DELETE: api/Hotel/5
         public string Delete(int id)
         {

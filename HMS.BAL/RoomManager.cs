@@ -25,9 +25,9 @@ namespace HMS.BAL
             return _roomRepository.CreateRoom(room);
         }
 
-        public List<RoomD> GetRoomDetails(RoomD room, Hotel hotel)
+        public List<RoomD> GetRoomDetails(HotelRoom room)
         {
-            return _roomRepository.GetRoomDetails(room, hotel);
+            return _roomRepository.GetRoomDetails(room);
         }
 
         //public List<RoomD> GetRoomByHotelCity(string city)

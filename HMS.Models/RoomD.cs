@@ -19,4 +19,13 @@ namespace HMS.Models
         public Nullable<System.DateTime> UpdatedDate { get; set; }
         public string UpdatedBy { get; set; }
     }
+    public class HotelRoom
+    {
+        public string City { get; set; }
+        public Nullable<int> Pincode { get; set; }
+        
+        public int? Price { get; set; }
+        public string Category { get; set; }
+
+    }
 }

@@ -9,7 +9,7 @@ namespace HMS.BAL.Interface
     public interface IRoomManager
     {
         string CreateRoom(RoomD room);
-        List<RoomD> GetRoomDetails(RoomD room, Hotel hotel);
+        List<RoomD> GetRoomDetails(HotelRoom room);
         // List<RoomD> GetRoomByHotelCity(string city);
     }
 }

@@ -134,6 +134,7 @@ namespace HMS.DAL.Repository
                 hotel.Name = entity.Name;
                 hotel.Address = entity.Address;
                 hotel.City = entity.City;
+                hotel.Pincode = entity.Pincode;
                 hotel.ContactNumber = entity.ContactNumber;
                 hotel.ContactPerson = entity.ContactPerson;
                 hotel.Website = entity.Website;

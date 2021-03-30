@@ -20,24 +20,25 @@ namespace ManageHotel.Controllers
         }
 
         // GET: api/Bookings/5
+        [Route("api/Bookings/")]
         public bool Get(Bookings bookings)
         {
             return _bookingManager.GetAvailabilityOfRoom(bookings);
         }
-
+        [Route("api/Bookings")]
         // POST: api/Bookings
         public string Post([FromBody]Bookings booking)
         {
             return _bookingManager.CreateBooking(booking);
         }
-
+        [Route("api/Bookings")]
         // PUT: api/Bookings/5
         public string Put([FromBody]Bookings model)
             
         {
             return _bookingManager.UpdateBooking(model);
         }
-
+        [Route("api/Bookings/")]
         // DELETE: api/Bookings/5
         public string Delete(int id)
         {

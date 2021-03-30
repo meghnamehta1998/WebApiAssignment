@@ -19,12 +19,18 @@ namespace ManageHotel.Controllers
 
         }
 
-       // GET: api/Room/5
-        public List<RoomD> Get([FromBody] RoomD room, [FromBody] Hotel hotel)
-        {
-            return _roomManager.GetRoomDetails(room, hotel);
-        }
 
+        // GET: api/Room/5
+        //public List<RoomD> Get([FromBody] RoomD room, [FromBody] Hotel hotel)
+        //{
+        //    return _roomManager.GetRoomDetails(room, hotel);
+        //}
+        [Route("api/Room")]
+        public List<RoomD> Get([FromBody] HotelRoom room)
+        {
+            return _roomManager.GetRoomDetails(room);
+        }
+        [Route("api/Room")]
         // POST: api/Room
         public string Post([FromBody]RoomD model)
         {

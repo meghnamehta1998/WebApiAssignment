@@ -23,3 +23,12 @@ C:\Users\ADMIN\Desktop\GatewayExamples\WebApiAssignment\HMS.Models\obj\Debug\HMS
 C:\Users\ADMIN\Desktop\GatewayExamples\WebApiAssignment\HMS.Models\obj\Debug\HMS.Models.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\GatewayExamples\WebApiAssignment\HMS.Models\obj\Debug\HMS.Models.dll
 C:\Users\ADMIN\Desktop\GatewayExamples\WebApiAssignment\HMS.Models\obj\Debug\HMS.Models.pdb
+D:\WebApiAssignment\HMS.Models\bin\Debug\HMS.Models.dll
+D:\WebApiAssignment\HMS.Models\bin\Debug\HMS.Models.pdb
+D:\WebApiAssignment\HMS.Models\bin\Debug\AutoMapper.dll
+D:\WebApiAssignment\HMS.Models\bin\Debug\AutoMapper.xml
+D:\WebApiAssignment\HMS.Models\obj\Debug\HMS.Models.csprojAssemblyReference.cache
+D:\WebApiAssignment\HMS.Models\obj\Debug\HMS.Models.csproj.CoreCompileInputs.cache
+D:\WebApiAssignment\HMS.Models\obj\Debug\HMS.Models.csproj.CopyComplete
+D:\WebApiAssignment\HMS.Models\obj\Debug\HMS.Models.dll
+D:\WebApiAssignment\HMS.Models\obj\Debug\HMS.Models.pdb
