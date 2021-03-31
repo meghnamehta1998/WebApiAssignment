@@ -26,15 +26,15 @@ namespace ManageHotel.Controllers
         //    return _roomManager.GetRoomDetails(room, hotel);
         //}
         [Route("api/Room")]
-        public List<RoomD> Get([FromBody] HotelRoom room)
+        public IHttpActionResult Get([FromBody] HotelRoom room)
         {
-            return _roomManager.GetRoomDetails(room);
+            return Ok(_roomManager.GetRoomDetails(room));
         }
         [Route("api/Room")]
         // POST: api/Room
-        public string Post([FromBody]RoomD model)
+        public IHttpActionResult Post([FromBody]RoomD model)
         {
-            return _roomManager.CreateRoom(model);
+            return Ok(_roomManager.CreateRoom(model));
         }
 
         // PUT: api/Room/5

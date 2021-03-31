@@ -20,29 +20,29 @@ namespace ManageHotel.Controllers
         }
 
         // GET: api/Bookings/5
-        [Route("api/Bookings/")]
-        public bool Get(Bookings bookings)
+        [Route("api/Bookings")]
+        public IHttpActionResult Get(Bookings bookings)
         {
-            return _bookingManager.GetAvailabilityOfRoom(bookings);
+            return Ok(_bookingManager.GetAvailabilityOfRoom(bookings));
         }
         [Route("api/Bookings")]
         // POST: api/Bookings
-        public string Post([FromBody]Bookings booking)
+        public IHttpActionResult Post([FromBody]Bookings booking)
         {
-            return _bookingManager.CreateBooking(booking);
+            return Ok(_bookingManager.CreateBooking(booking));
         }
         [Route("api/Bookings")]
         // PUT: api/Bookings/5
-        public string Put([FromBody]Bookings model)
+        public IHttpActionResult Put([FromBody]Bookings model)
             
         {
-            return _bookingManager.UpdateBooking(model);
+            return Ok(_bookingManager.UpdateBooking(model));
         }
-        [Route("api/Bookings/")]
+        [Route("api/Bookings")]
         // DELETE: api/Bookings/5
-        public string Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
-            return _bookingManager.DeleteBooking(id);
+            return Ok(_bookingManager.DeleteBooking(id));
         }
     }
 }

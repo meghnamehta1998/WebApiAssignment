@@ -19,37 +19,37 @@ namespace ManageHotel.Controllers
 
         }
         [Route("api/Hotel/")]
-        public Hotel Get(int id) {
-            return _hotelManager.GetHotel(id);
+        public IHttpActionResult Get(int id) {
+            return Ok(_hotelManager.GetHotel(id));
         }
         // GET api/values
         [Route("api/Hotel")]
-        public List<Hotel> Get()
+        public IHttpActionResult Get()
         {
             //HotelManager hotelManager = new HotelManager();
             //hotelManager.GetHotel();
             //var hotel = _hotelManager.GetHotel();
             //return hotel;
-            return _hotelManager.GetAllHotels();
+            return Ok( _hotelManager.GetAllHotels());
         }
 
         [Route("api/Hotel")]
         // POST: api/Hotel
-        public string Post([FromBody]Hotel model)
+        public IHttpActionResult Post([FromBody]Hotel model)
         {
-            return _hotelManager.CreateHotel(model);
+            return Ok(_hotelManager.CreateHotel(model));
         }
         [Route("api/Hotel")]
         // PUT: api/Hotel/5
-        public string Put([FromBody]Hotel model)
+        public IHttpActionResult Put([FromBody]Hotel model)
         {
-            return _hotelManager.UpdateHotel(model);
+            return Ok(_hotelManager.UpdateHotel(model));
         }
         [Route("api/Hotel/")]
         // DELETE: api/Hotel/5
-        public string Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
-            return _hotelManager.DeleteHotel(id);
+            return Ok(_hotelManager.DeleteHotel(id));
         }
     }
 }
