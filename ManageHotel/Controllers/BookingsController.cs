@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace ManageHotel.Controllers
 {
+    [CustomAuthenticate]
     public class BookingsController : ApiController
     {
         private readonly IBookingsManager _bookingManager;
@@ -38,7 +39,9 @@ namespace ManageHotel.Controllers
         {
             return Ok(_bookingManager.UpdateBooking(model));
         }
-        [Route("api/Bookings")]
+
+
+        //[Route("api/Bookings/")]
         // DELETE: api/Bookings/5
         public IHttpActionResult Delete(int id)
         {

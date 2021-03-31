@@ -92,7 +92,7 @@ namespace MHS.DAL.Repository
             {
                
                 object[] parameters = { bookings.BookingDate,bookings.RoomId };
-                var entity1 = _dbContext.Database.SqlQuery<Bookings>("select Status from Bookings where BookingDate = {0} and RoomId = {1}", parameters).ToList();
+                var entity1 = _dbContext.Database.SqlQuery<Bookings>("select Status from Bookings where BookingDate >= {0} and RoomId = {1}", parameters).ToList();
                 if (entity1 != null)
                 {
                     Bookings b = new Bookings();

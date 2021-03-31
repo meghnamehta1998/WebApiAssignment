@@ -53,7 +53,7 @@ namespace MHS.DAL.Repository
                 List<RoomD> listsorted = new List<RoomD>();
                 List<RoomD> roomD = new List<RoomD>();
                 object[] parameters = { room.City,room.Pincode,room.Price,room.Category };
-                var entity1 = _dbContext.Database.SqlQuery<RoomD>("Select * from RoomD,Hotel where Hotel.City={0} AND Hotel.Pincode={1} AND RoomD.Price={2} AND RoomD.Category={3}", parameters).ToList();
+                var entity1 = _dbContext.Database.SqlQuery<RoomD>("Select * from RoomD,Hotel where Hotel.City={0} OR Hotel.Pincode={1} OR RoomD.Price={2} OR RoomD.Category={3}", parameters).ToList();
                 if (entity1 != null) {
                     foreach (var item in entity1) {
                         RoomD r = new RoomD();

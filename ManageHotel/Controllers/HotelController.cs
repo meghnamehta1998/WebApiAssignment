@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace ManageHotel.Controllers
 {
+    [CustomAuthenticate]
     public class HotelController : ApiController
     {
         private readonly IHotelManager _hotelManager;
